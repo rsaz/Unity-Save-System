@@ -23,20 +23,18 @@ Generic Unity Saving System
 
 Project created to demonstrate a generic saving system that can be used in any game:
 Scripts:
-- transform.Translate()
-- transform.position
-- rigidbody2d.velocity;
-- rigidbody2d.addForce
-- rigidbody2d.MovePosition()
+- SavingLoadingSystem : Responsible to define a temporary Context Menu Function to save and Load. Just one saving system per level is required
+- LevelSystem : Is the class data structure that will be saved. You can change the data structure to suit your need
+- ISaveable : interface created to define two main methods to save and restore data
+- SaveableEntity : You can add this script to any object that you want to save data and it will automatically add the LevelSystem Script
 
 Here's why:
-* Your time should be focused on creating something amazing rather than learning how to create your movement code for your game. You can take this code as a starting point. :smile:
+* Your time should be focused on creating something amazing rather than recreating saving systems for every single game you build. You can take this code as a starting point. :smile:
 
 ### Built With
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Unity Engine](https://unity.com/)
-* [VSCODE](https://code.visualstudio.com/)
-* [Git for Unity](https://unity.github.com/)
+* [VS Community](https://visualstudio.microsoft.com/downloads/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -52,11 +50,12 @@ You are free to enhance this project sending your contribution, star and fork, o
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Fork the original repository to your own repository
+2. Clone it to your local
+3. Contribute to it
+4. Push it to your remote repo
+5. Send a PR to the main repo
+6. Your contribution will be evaluated then we will merge your changes with the original repository.
 
 <!-- CONTACT -->
 ## Contact
